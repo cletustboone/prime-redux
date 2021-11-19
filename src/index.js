@@ -1,20 +1,22 @@
 const nopt = require('nopt')
 
 const wellKnown = {
-  'first': [String]
+  'first': [String],
+  'last': [String]
 }
 
 const shortHands = {
-  'f': '--first'
+  'f': '--first',
+  'l': '--last'
 }
 
 const opts = nopt(wellKnown, shortHands)
 
 // Validate inputs here.
 if (!opts.first) {
-  console.log('Please specify --fist parameter.')
+  console.log('Please specify --first parameter.')
   process.exit(0)
 }
 
 // Program body.
-console.log(`Hello ${opts['first']}`)
+console.log(`Hello ${opts['first']} ${opts['last'] || ''}`)

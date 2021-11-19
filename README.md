@@ -1,4 +1,4 @@
-# Prime Ringer
+# Prime Redux
 
 A cli utility that says your name back to you. Usage:
 

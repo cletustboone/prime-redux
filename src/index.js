@@ -2,12 +2,14 @@ const nopt = require('nopt')
 
 const wellKnown = {
   'first': [String],
-  'last': [String]
+  'last': [String],
+  'bar': [String]
 }
 
 const shortHands = {
   'f': '--first',
-  'l': '--last'
+  'l': '--last',
+  'b': '--bar'
 }
 
 const opts = nopt(wellKnown, shortHands)

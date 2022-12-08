@@ -20,3 +20,5 @@ if (!opts.first) {
 
 // Program body.
 console.log(`Hello ${opts['first']} ${opts['last'] || ''}`)
+
+// Foo bar is my name.
